@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="parent" class="container">
+      <div id="div1">
+        <h1>Keep Your Day Organized With CQ's TODO APP</h1>
+      </div>
+
+      <div id="div2">
+        <h1>TASK LIST</h1>
+        <p style="color: grey">
+          Add tasks to your list by typing to the right and pressing enter. You
+          may then view pending tasks below.
+        </p>
+        <ul id="list" style="padding-top: 2%"></ul>
+      </div>
+
+      <div id="div3">
+        <h1 id="taskStatus">ADD NEW TASK</h1>
+        <hr />
+        <div id="taskbox">
+          <input id="input" type="text" placeholder="I need to ..." required />
+          <div>
+            <form action="/image" method="POST" enctype="multipart/form-data">
+              <input
+                id="file"
+                type="file"
+                name="avatar"
+                accept="image/*"
+                required
+              />
+              <br />
+              <br />
+              <input id="btn" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
